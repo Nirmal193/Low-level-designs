@@ -13,8 +13,21 @@ import java.util.stream.Collectors;
 
 public class Test_room_01 {
     public static void main(String[] args) {
-
-
+      String multiLineText = """
+              this is a text 
+              represents a multiline text
+              and the lines are separated by something else
+              """;
+        System.out.println(multiLineText);
+    }
+    public static void exceptionHandleingChec(){
+        try {
+            //Class.forName("org.example.test_facility.Test_class_01");
+            Test_class_01.someFucntionality();
+            Test_class_01.counter();
+        }catch (Exception e) {
+            System.out.println("Experimenting be quite!!!!");
+        }
     }
     public static void mergeFucntionalityOfToMap(){
         List<Accounts> accounts = AccountsDataGenerator.generateDummyAccounts(20);
